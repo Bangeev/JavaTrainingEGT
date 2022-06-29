@@ -1,0 +1,3 @@
+test.txt
+1.11
+text text text text{}[]

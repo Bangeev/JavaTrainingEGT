@@ -1,0 +1,18 @@
+myfile.txt
+1.5
+try {
+            address = InetAddress.getByName(settings.getHost());
+            socket = new Socket(address, settings.getPort());
+            in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())), true);
+
+            out.println(settings.getNickname());
+            log.info("User {} successfully logged in to server: {}", settings.getNickname(), socket);
+            return null;
+        } catch (UnknownHostException e) {
+            log.error("Unknown chat server hostname:", e);
+            return "Unknown chat server hostname: " + settings.getHost();
+        } catch (IOException e) {
+            log.error("Error connecting to chat server:", e);
+            return "Error connecting to chat server: " + address + ":" + settings.getPort();
+        }
