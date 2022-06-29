@@ -1,0 +1,62 @@
+GET http://localhost:8080/api/recipes
+Accept: application/json
+
+###
+POST http://localhost:8080/api/recipes
+Content-Type: application/json
+
+{
+  "userId": 8,
+  "name": "Recipe",
+  "shortDescription": "description how to make cookies",
+  "cookingTimeMinutes": 60,
+  "products": "test,anotherTest,andAnotherAnotherTEST",
+  "image": "URLOFREADYCOOKIE",
+  "longDescription": "This is a long description",
+  "tags": "sladko,kruglo,vkusno"
+}
+###
+POST http://localhost:8080/api/recipes
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "name": "Recipe for bread",
+  "shortDescription": "description how to make cookies",
+  "cookingTimeMinutes": 60,
+  "products": "test, anotherTest, andAnotherAnotherTEST"
+  ,
+  "image": "URLOFREADYCOOKIE",
+  "longDescription": "This is a long description",
+  "tags": "hlqb, zele, maq"
+
+}
+
+###
+DELETE http://localhost:8080/api/recipes/9
+
+###
+
+PUT http://localhost:8080/api/recipes/12
+Content-Type: application/json
+
+{
+  "id": 12,
+  "userId": 1,
+  "name": "Recipe",
+  "shortDescription": "Changed description",
+  "cookingTimeMinutes": 10,
+  "products": "test,anotherTest,NONEEEEEEE",
+  "image": "URLOFREADYCOOKIE",
+  "longDescription": "This is a long description",
+  "tags": "ladko"
+
+}
+###
+GET http://localhost:8080/api/recipes?tags=dry
+Content-Type: application/json
+
+###
+GET http://localhost:8080/api/recipes?name=Ever
+Content-Type: application/json
+
