@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<userList>
+    <user id="1">
+        <name>John Doe</name>
+        <username>georgi</username>
+        <password>georgi123</password>
+        <gender>MALE</gender>
+        <role>ADMIN</role>
+        <profilePhoto>https://google.bg/</profilePhoto>
+        <description>this is shotr description</description>
+        <status>ACTIVE</status>
+        <created>2022-05-30T11:00:08.837179800</created>
+        <modified>2022-05-30T11:00:08.840181300</modified>
+    </user>
+    <user id="2">
+        <name>TEST2</name>
+        <username>georgi</username>
+        <password>georgi123</password>
+        <gender>MALE</gender>
+        <role>ADMIN</role>
+        <profilePhoto>https://google.bg/</profilePhoto>
+        <description>this is shotr description</description>
+        <status>ACTIVE</status>
+        <created>2022-05-30T11:00:08.840181300</created>
+        <modified>2022-05-30T11:00:08.840181300</modified>
+    </user>
+</userList>

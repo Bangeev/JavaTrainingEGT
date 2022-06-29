@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<userList>
+    <user id="1">
+        <name>John Doe</name>
+        <username>johndoe</username>
+        <password>johnpsw</password>
+        <gender>MALE</gender>
+        <role>ADMIN</role>
+        <profilePhoto>www.asd.as</profilePhoto>
+        <description>Some description</description>
+        <status>ACTIVE</status>
+        <created>2022-05-29 18:18:44</created>
+        <modified>2022-05-29 18:18:44</modified>
+    </user>
+    <user id="2">
+        <name>Jane Doe</name>
+        <username>janedoe</username>
+        <password>janepsw</password>
+        <gender>FEMALE</gender>
+        <role>USER</role>
+        <profilePhoto>www.asd.as</profilePhoto>
+        <description>Some description</description>
+        <status>SUSPENDED</status>
+        <created>2022-05-29 18:18:44</created>
+        <modified>2022-05-29 18:18:44</modified>
+    </user>
+</userList>

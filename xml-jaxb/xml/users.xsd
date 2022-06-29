@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="userList">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="user" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string" minOccurs="0"/>
+                            <xs:element name="username" type="xs:string" minOccurs="0"/>
+                            <xs:element name="password" type="xs:string" minOccurs="0"/>
+                            <xs:element name="gender">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="MALE"/>
+                                        <xs:enumeration value="FEMALE"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="role">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="ADMIN" />
+                                        <xs:enumeration value="USER" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="profilePhoto" type="xs:string" minOccurs="0"/>
+                            <xs:element name="description" type="xs:string" minOccurs="0"/>
+                            <xs:element name="status" >
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="ACTIVE" />
+                                        <xs:enumeration value="SUSPENDED" />
+                                        <xs:enumeration value="DEACTIVATED" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="created" type="xs:string" minOccurs="0"/>
+                            <xs:element name="modified" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:long" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
+
